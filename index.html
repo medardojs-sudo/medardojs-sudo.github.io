@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi esposa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #444;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 20px;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decoración superior */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3em;
+            color: #d6336c;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            font-size: 0.9em;
+            color: #888;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .message {
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            text-align: justify; /* Justificado para parecer una carta real */
+        }
+
+        /* Animación del corazón */
+        .heart {
+            color: #d6336c;
+            font-size: 50px;
+            animation: latido 1.5s infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #aaa;
+            font-style: italic;
+        }
+        
+        /* Para móviles */
+        @media (max-width: 480px) {
+            h1 { font-size: 2.5em; }
+            .card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="heart">❤</div>
+        <h1>Feliz 1er Aniversario</h1>
+        <div class="date">17 de Enero, 2026</div> <div class="message">
+            <p>Hola mi amor,</p>
+            <p>"Mi amor,
+
+Hoy cumplimos nuestro primer año, nuestras 'Bodas de Papel'. Dicen que el papel es frágil, pero yo pienso que es el material donde se dibujan los planos de los grandes proyectos.
+
+Este año ha sido como poner los cimientos. Hemos aprendido a convivir, a ajustar nuestras rutinas y a sostenernos el uno al otro. Sé que no siempre ha sido fácil y que a veces faltan cosas materiales, pero me he dado cuenta de que lo esencial ya lo tenemos: nos tenemos a nosotros.
+
+No tengo un regalo costoso hoy, pero tengo mis manos y mi corazón comprometidos a seguir construyendo esta vida contigo, reparando lo que haga falta y cuidando cada detalle de nuestro hogar. Gracias por ser mi compañera y mi refugio.
+
+Te amo más que ayer."</p>
+        </div>
+
+        <div class="footer">
+            Con todo mi amor,<br>
+            Tu Esposo
+        </div>
+    </div>
+
+</body>
+</html>
